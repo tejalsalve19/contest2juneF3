@@ -57,7 +57,8 @@ document.addEventListener("DOMContentLoaded", function()
    fullnameElement.textContent = user.fullname;
    emailElement.textContent = user.email;
  }
-  logoutButton.addEventListener("click", function() {
+  logoutButton.addEventListener("click", function() 
+  {
     localStorage.removeItem("user");
     localStorage.removeItem("accessToken");
     window.location.href = "./index.html";
@@ -77,14 +78,14 @@ document.addEventListener("DOMContentLoaded", function()
       document.getElementById("email-profile").textContent = user.email;
       document.getElementById("password-profile").textContent = user.password;
     }
-  } else if (path === "./index.html") 
+  } 
+  else if (path === "./index.html") 
   {
     if (isAuthenticated) 
     {
       window.location.href = "./profile.html";
     }
   }
-
   function generateAccessToken() 
   {
     const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
