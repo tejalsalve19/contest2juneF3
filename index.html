@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup Page</title>
-  <link rel="stylesheet" href="./style.css">
+  <title>Signup</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Signup</h1>
-    <form id="signup-form">
-      <input type="text" id="name" placeholder="Name" required><br><br>
-      <input type="email" id="email" placeholder="Email" required><br><br>
-      <input type="password" id="password" placeholder="Password" required><br><br>
-      <input type="password" id="confirm-password" placeholder="Confirm Password" required><br><br>
-      <button type="submit">Sign Up</button>
-    </form>
-    <p id="error-message" class="error-message"></p>
-    <p id="success-message" class="success-message"></p>
+  <div class="navbar">
+    <span class="header">Header</span>
+    <span class="tabs">
+      <a href="./index.html">Signup</a>
+      <a href="./profile.html">Profile</a>
+    </span>
   </div>
+
+  <div class="container">
+    <h2 class="title">Signup</h2>
+    <div class="form">
+      <input type="text" id="fullname" placeholder="Full Name">
+      <input type="email" id="email" placeholder="Email">
+      <input type="password" id="password" placeholder="Password">
+      <input type="password" id="confirmPassword" placeholder="Confirm Password">
+      <div class="messages" id="error-message"></div>
+      <div class="messages" id="success-message"></div>
+      <button id="signup-button">Signup</button>
+    </div>
+  </div>
+
   <script src="./script.js"></script>
 </body>
 </html>
-
-
