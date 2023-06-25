@@ -1,15 +1,69 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .error-message {
-    color: red;
-  }
-  
-  .success-message {
-    color: green;
-  }
-  
+  width: 300px;
+  margin: 50px auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.messages {
+  margin-bottom: 10px;
+}
+
+#error-message {
+  color: red;
+}
+
+#success-message {
+  color: green;
+}
+
+.container .form signup-button {
+  display: none;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.profile-details {
+  margin-top: 20px;
+}
+
+.navbar {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header {
+  color: white;
+}
+
+.tabs a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+
